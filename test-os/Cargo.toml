@@ -1,5 +1,5 @@
 [package]
-name = "Test-OS"
+name = "test-os"
 version = "0.1.0"
 edition = "2024"
 
@@ -9,3 +9,8 @@ panic = "abort"
 [profile.release]
 panic = "abort"
 [dependencies]
+
+[[bin]]
+name = "test-os"
+test = false
+bench = false

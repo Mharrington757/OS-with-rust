@@ -1,6 +1,6 @@
-//Removing Standard Library
+//Removing Standard Library and main function
 #![no_std]
-
+#![no_main]
 // Implementing Panic Handler
 use core::panic::PanicInfo;
 
@@ -9,6 +9,5 @@ use core::panic::PanicInfo;
 fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
-
 
 fn main() {}
